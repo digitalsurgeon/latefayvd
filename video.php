@@ -16,7 +16,7 @@ if (empty($url)) {
     $result = NO_INPUT_URL;
 }
 else {
-    $videoUrl = json_decode(exec("\\site\\wwwroot\\youtube-dl -g -j $url"));
+    $videoUrl = json_decode(exec("d:\\home\\python35\\python.exe d:\\home\\site\\wwwroot\\youtube-dl -g -j $url"));
     if ($videoUrl != TRUE) {
         $result = NO_VIDEO_DOWNLOAD_URL;
     }
