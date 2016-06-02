@@ -16,7 +16,7 @@ if (empty($url)) {
     $result = NO_INPUT_URL;
 }
 else {
-    $videoUrl = json_decode(exec("/home1/greenso1/public_html/video_download/youtube-dl -g -j $url"));
+    $videoUrl = json_decode(exec("\\site\\wwwroot\\youtube-dl -g -j $url"));
     if ($videoUrl != TRUE) {
         $result = NO_VIDEO_DOWNLOAD_URL;
     }
